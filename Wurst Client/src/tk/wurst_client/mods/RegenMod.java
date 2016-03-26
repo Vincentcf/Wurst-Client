@@ -1,5 +1,5 @@
 /*
- * Copyright © 2014 - 2016 | Wurst-Imperium | All rights reserved.
+ * Copyright Â© 2014 - 2016 | Wurst-Imperium | All rights reserved.
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -32,7 +32,6 @@ public class RegenMod extends Mod implements UpdateListener
 		if(!mc.thePlayer.capabilities.isCreativeMode
 			&& mc.thePlayer.getFoodStats().getFoodLevel() > 17
 			&& mc.thePlayer.getHealth() < 20 && mc.thePlayer.getHealth() != 0
-			&& mc.thePlayer.onGround)
 			for(int i = 0; i < 1000; i++)
 				mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer());
 	}
